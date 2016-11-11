@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*.pageContain { width:100%; min-width:1140px;  margin:0 auto 0 auto; text-align:center }
+*.siteContain { width:1140px; margin:0 auto 0 auto; }
+
+#slideshow {
+    position:relative;
+    height:360px;
+	width:1140px; /* I added this */
+}
+
+#slideshow DIV {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    height: 360px;
+	width:1140px; /* I added this */
+    background-color: #FFF;
+}
+
+#slideshow DIV.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow DIV.last-active {
+    z-index:9;
+}
+
+#slideshow DIV IMG {
+    height: 360px;
+	width:1140px; /* I added this */
+    display: block;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#FFFCF9;
+}
+*.dropShad {   
+-webkit-box-shadow: 3px 3px 5px 3px #999;
+    -moz-box-shadow: 3px 3px 5px 3px #999;
+    box-shadow: 3px 3px 5px 3px #999;  
+}
+
+*.boxShad {   
+-webkit-box-shadow: 0 0 5px 3px #999;
+    -moz-box-shadow: 0 0 5px 3px #999;
+    box-shadow: 0 0 5px 3px #999;  
+}
+
+*.homeCatHead {  margin:56px 0 0 0; font-family: 'Roboto Condensed', sans-serif; font-size:36px; text-decoration:none; font-weight:bold; color:#FFF; text-align:center; }
+*.homeTopHeight { height:440px; }
+
+*.header { height:86px; margin:18px auto 0 auto; vertical-align:middle } 
+
+*.headerLogoDiv { float:left }
+*.headerLogoPic { width:210px; height:86px; }
+*.dupageHeader { width:233px; height:84px;}
+*.headNavDiv {  border:1px #8AC solid; border-radius:10px; background-color:#F0F9FF; float:right; width:33.33%; }
+#headNav  { margin:0 0 0 0; padding:0; list-style:none; }
+#headNav li a {  padding:6px 18px 6px 18px; font-family:'Roboto Condensed', sans-serif; font-size:18px; font-weight:bold; color:#39C; float:left; text-decoration:none; display:inline; }
+#headNav li a:hover { color:#07A; text-decoration:underline; }
+
+*.topSlides { margin:0 auto 0 auto; padding:0; height:360px; }
+
+*.homeBoxes { width:33.33%; float:left; text-align:center; display:inline-block }
+*.boxOrange {width:90%; border:#d98300 2px solid; border-radius:10px; background-color:#ff9a00; background-color:#ff9f05; padding-bottom:24px}
+*.boxGreen {width:90%; border:#03b2a7 2px solid; border-radius:10px; background-color:#06d4cd; padding-bottom:24px}
+*.boxBlue {width:90%; border:#20b0d4 2px solid; border-radius:10px; background-color:#26cbfa; padding-bottom:24px}
+
+*.middle { background-color:#FFF6E0; background-image:url(../images/bg-main2.gif); background-size:256px; margin:0 auto 0 auto; text-align:center; padding:12px 0 48px 0; border-top:#FB5 1px solid; border-bottom:#FB5 1px solid; }
+
+*.midNavDiv { width:75%; margin:1em auto 0.5em auto }
+#midNav {
+	margin: 0 0 0 0;
+	padding: 0;
+	list-style: none;
+	text-align:left; }
+#midNav li a {
+		display: block;
+		padding: 6px 15px;
+		margin-top:0.5em;
+		text-decoration: none;
+		font-weight: bold;
+		color: #069;
+		font-family:'Roboto Condensed', sans-serif; font-size:22px; text-decoration:none; font-weight:normal; 
+		border-radius:4px; background-color:#FFF; background-image:url(../images/home/red-arrow.png); background-repeat:no-repeat; background-position:right; background-size:8%; opacity:0.92; }
+#midNav li a:hover { background-color:#FFF;  box-shadow: 0px 0px 10px #FFF; opacity:1.0; background-size:9%}
+
+*.homeCirclePic { position:relative; left:0px; top:40px; z-index:50;}
+*.picScale { width:45%; }
+*.socialIcon { width:40px; padding:12px; }
+*.dispInBlock { display:inline-block; }
+
+*.featSch { display:none; }
+*.featSchImg { display:none; }
+
+*.footerDiv { margin:0 auto 0 auto; padding:24px; }
+*.footerSocDiv { float:left; margin-left:24px }
+*.footerCopyDiv { float:right; margin:0 24px 12px 0}
+
+*.footConnect { font-family:'Roboto Condensed', sans-serif; font-size:18px; color:#07a; text-decoration:none; font-weight:normal; text-align:center; margin:0; }
+*.footText { font-family:'Roboto Condensed', sans-serif; font-size:14px; color:#07a; margin:12px 0 0 0; line-height:133%; text-align:right; float:right; display:inline-block;  }
+*.footLogos { margin:6px 0 0 0; float:right; display:inline-block; }
+*.footLogoImg { width:60px; padding:8px; float:right;  }
+
+@media only screen and (max-device-width: 720px)  {
+	
+*.siteContain { width:100%; margin:0 auto 0 auto; }
+
+#slideshow {
+	display:none;
+	height:0px; }
+#slideshow DIV {
+	display:none;
+	height:0px; 
+	width:100%; }
+#slideshow DIV IMG {
+	display:none;
+	height:0px; 
+	width:100%; }
+
+*.topSlides { margin:0 auto 0 auto; padding:0; height:0px; }
+
+*.header { height:auto; margin:5% auto 0 auto; text-align:center; }
+*.headerLogoDiv { float:none; margin:0 auto 0 11%; text-align:center;  } /* 11% left margin is a kludge */
+*.headerLogoPic { width:700px; height:276px; }
+*.headNavDiv {  border:2px #8AC solid; border-radius:20px;  background-color:#F0F9FF; float:none; width:90%; margin:4% auto 0 11%; text-align:center; } /* 11% left margin is a kludge */
+#headNav  { margin:0 0 0 0; padding:0; list-style:none; text-align:center; }
+#headNav li a {  padding:1.5% 3% 1.5% 3%; font-size:300%; float:left; }
+#headNav li a:hover { color:#07A; text-decoration:underline; }	
+	
+*.homeBoxes { width:100%; float:left; text-align:center; display:inline-block }
+*.boxOrange {border:#d98300 4px solid; border-radius:15px; padding-bottom:5%}
+*.boxGreen {border:#03b2a7 4px solid; border-radius:15px; padding-bottom:5%}
+*.boxBlue {border:#20b0d4 4px solid; border-radius:15px; padding-bottom:5%}
+*.homeCirclePic {
+	position: relative;
+	left: 0px;
+	top: 80px;
+	z-index: 50;
+	background-image: url(picture%20of%20teacher);
+}
+*.picScale { width:50%; }
+*.homeCatHead { font-size:700%; margin:8% 0 0 0;   }
+
+*.middle { background-image:none; background-color:transparent; margin:0 auto 0 auto; border:none;}
+#midNav li a {
+		padding: 3% 6%;
+		margin-top:0.5em;
+		font-size:400%;
+		border-radius:12px; }
+#midNav li a:hover { opacity:0.92; }
+#midNav li a:visited { opacity:0.92; }
+#midNav li a:active { opacity:0.92; }
+
+*.featSch { display:inline-block; width:85%; margin:10% auto 0 auto; }
+*.featSchImg { display:inline-block; width:90%; }
+
+*.footerDiv { margin:0 auto 0 auto; padding:4%; text-align:center; }
+*.footConnect { font-size:350%; }
+*.socialIcon { width:80px; padding:24px; }
+*.footText {  font-size:250%; text-align:center; float:none; margin:0 auto 0 auto; display:inline-block; }
+*.footLogos { margin:4% auto 0 auto; text-align:center; float:none; display:inline-block; }
+*.footLogoImg { width:150px; padding:16px; float:none;  }
+*.footerSocDiv { float:none; margin:32px auto 0 auto; text-align:center; }
+*.footerCopyDiv { float:none; margin:4% auto 4% auto }
+
+}
