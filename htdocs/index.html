@@ -10,56 +10,56 @@
 <meta itemprop="name" content="Promoting STEM Education for DuPage County | STEM DuPage" />
 <meta itemprop="description" content="STEM DuPage: Resources and activities to help promote STEM education for DuPage County." />
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <link href='css/stem-home.css' rel='stylesheet' type='text/css'>
 
 <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
 
-<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
-
 <script type="text/javascript">
-<!--
-/*** 
-    Simple jQuery Slideshow Script
-    Released by Jon Raasch (jonraasch.com) under FreeBSD license: free to use or modify, not responsible for anything, etc.  Please link out to me if you like it :)
-***/
+function putImageBack(id){
+	var leftPercent = 12.5*id - 12.5;
+	var marginToUse = 0;
+	if(id > 8){
+		marginToUse = 12.5;
+		leftPercent = leftPercent - 100;
+	}
 
-function slideSwitch() {
-    var $active = $('#slideshow DIV.active');
+	$("#image" + id.toString()).ready(function() {
+		$("#image" + id.toString()).css("z-index", 1);
+		$("#image" + id.toString()).animate({
+			width: "12.5%",
+			left: leftPercent.toString() + "%",
+			marginTop: marginToUse.toString() + "%"
+		});
 
-    if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
-
-    // use this to pull the divs in the order they appear in the markup
-    var $next =  $active.next().length ? $active.next()
-        : $('#slideshow DIV:first');
-
-    // uncomment below to pull the divs randomly
-    // var $sibs  = $active.siblings();
-    // var rndNum = Math.floor(Math.random() * $sibs.length );
-    // var $next  = $( $sibs[ rndNum ] );
-
-
-    $active.addClass('last-active');
-
-    $next.css({opacity: 0.0})
-        .addClass('active')
-        .animate({opacity: 1.0}, 200, function() {
-            $active.removeClass('active last-active');
-        });
+		explodeImage(Math.floor((Math.random() * 16)) + 1);
+	});
 }
 
-$(function() {
-    setInterval( "slideSwitch()", 7000 );
+function explodeImage(id){
+	var factor = 2;
+$("#image" + id.toString()).ready(function() {
+	$("#image" + id.toString()).css("z-index", 100);
+	$("#image" + id.toString()).animate({
+		width: "25%",
+		left: "37.5%",
+		marginTop: 0
+	});
+		setTimeout(putImageBack.bind(null,id),3000);
 });
--->
+}
+var idToPass = Math.floor((Math.random() * 16) + 1);
+explodeImage(idToPass);
 </script>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-37685343-2', 'auto');
   ga('send', 'pageview');
@@ -71,6 +71,7 @@ $(function() {
 
 <div id="header"  class="header siteContain">
 <div id="headerLogo" class="headerLogoDiv dispInBlock"><a href="index.html"><img src="images/stemHeader.png" alt="STEM DuPage logo" class="headerLogoPic" /></a> <a href="http://dupageroe.org"><img src="images/dupageHeader.jpg" alt="DuPage logo" class="dupageHeader"/></a></div>
+
 <div id="headerNav" class="headNavDiv dispInBlock">
 <ul id="headNav">
 <li><a href="stem-dupage/news.html">News</a></li>
@@ -79,28 +80,26 @@ $(function() {
 </ul></div>
 </div> <!-- closes HEADER -->
 
-<!--
-<div id="topSlideArea" class="siteContain topSlides" >
-
-<div id="slideshow">
-    <div class="active">
-        <a href="stem-dupage/stem-featured-school.html"><img src="images/home/slides/slide01.jpg" alt="Slideshow Image 1" /></a>
-    </div>
-    
-    <div>
-        <a href="stem-dupage/stem-featured-school.html"><img src="images/home/slides/slide02.jpg" alt="Slideshow Image 2" /></a>
-    </div>
-    
-    <div>
-        <a href="stem-dupage/stem-featured-school.html"><img src="images/home/slides/slide03.jpg" alt="Slideshow Image 3" /></a>
-    </div>
-    
-</div> <-- closes SLIDESHOW ->
-
-</div> <-- closes TOPSLIDES  Hiding Slideshow-->
-
-<div id="topSlideArea" class="siteContain topSlides">
-	<img src="images/home/header_slide.png"/>
+<div class="imgContain">
+	<div class="firstRow centered">
+		<img src="images/stemsized/BuildingASkullCaste.jpg" id="image1" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/BuildingEnthusiasmForSTEM.JPG" id="image2" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/CelebratingPresidentsDaywithSTEM.JPG" id="image3" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/EngagingSTEM.jpg" id="image4" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/EngineerSomeAfterSchoolSTEM.jpg" id="image5" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/ExtractingDNA.JPG" id="image6" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/FunSTEMshirts.JPG" id="image7" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/PlantingTheSeedsForSTEM.JPG" id="image8" class="firstRowImage headerImage"/>
+	
+		<img src="images/stemsized/RacingSnowmanSleds.JPG" id="image9" class="secondRowImage headerImage" />
+		<img src="images/stemsized/Robotics_At_After_School_STEM.jpg" id="image10" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEM!Wow!.JPG" id="image11" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEM_ItsInTheCards.JPG" id="image12" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEMForAll.JPG" id="image13" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEMISAllAroundUs.JPG" id="image14" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEMNightAtCroneMiddleSchool.JPG" id="image15" class="secondRowImage headerImage" />
+		<img src="images/stemsized/TeachersLearningAboutSTEMResourcesInOurCounty.JPG" id="image16" class="secondRowImage headerImage" />
+	</div>
 </div>
 
 <div id="middleArea" class="pageContain dispInBlock middle">
