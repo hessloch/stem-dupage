@@ -42,7 +42,7 @@
 
 .firstRow{display:inline-block; width:100%;}
 
-.imgContain{height:360px;}
+.imgContain{height:480px;}
 #image1{left:0%;}
 #image2{left:12.5%;}
 #image3{left:25%;}
@@ -59,6 +59,23 @@
 #image14{left:62.5%;margin-top:12.5%;}
 #image15{left:75%;margin-top:12.5%;}
 #image16{left:87.5%;margin-top:12.5%;}
+#image1stat{left:0%;}
+#image2stat{left:12.5%;}
+#image3stat{left:25%;}
+#image4stat{left:37.5%;}
+#image5stat{left:50%;}
+#image6stat{left:62.5%;}
+#image7stat{left:75%;}
+#image8stat{left:87.5%;}
+#image9stat{left:0%;margin-top:12.5%;}
+#image10stat{left:12.5%;margin-top:12.5%;}
+#image11stat{left:25%;margin-top:12.5%;}
+#image12stat{left:37.5%;margin-top:12.5%;}
+#image13stat{left:50%;margin-top:12.5%;}
+#image14stat{left:62.5%;margin-top:12.5%;}
+#image15stat{left:75%;margin-top:12.5%;}
+#image16stat{left:87.5%;margin-top:12.5%;}
+
 
 
 

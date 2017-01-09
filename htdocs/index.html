@@ -28,13 +28,13 @@ function putImageBack(id){
 	}
 
 	$("#image" + id.toString()).ready(function() {
-		$("#image" + id.toString()).css("z-index", 1);
+		$("#image" + id.toString()).css("border", "none");
 		$("#image" + id.toString()).animate({
 			width: "12.5%",
 			left: leftPercent.toString() + "%",
 			marginTop: marginToUse.toString() + "%"
 		});
-
+		$("#image" + id.toString()).css("z-index", 1);
 		explodeImage(Math.floor((Math.random() * 16)) + 1);
 	});
 }
@@ -42,6 +42,9 @@ function putImageBack(id){
 function explodeImage(id){
 	var factor = 2;
 $("#image" + id.toString()).ready(function() {
+	$("#image" + id.toString()).css("border", "solid");
+	$("#image" + id.toString()).css("border-color", "#000");
+	$("#image" + id.toString()).css("border-width", "5px");
 	$("#image" + id.toString()).css("z-index", 100);
 	$("#image" + id.toString()).animate({
 		width: "25%",
@@ -99,6 +102,25 @@ explodeImage(idToPass);
 		<img src="images/stemsized/STEMISAllAroundUs.JPG" id="image14" class="secondRowImage headerImage" />
 		<img src="images/stemsized/STEMNightAtCroneMiddleSchool.JPG" id="image15" class="secondRowImage headerImage" />
 		<img src="images/stemsized/TeachersLearningAboutSTEMResourcesInOurCounty.JPG" id="image16" class="secondRowImage headerImage" />
+	
+		<img src="images/stemsized/BuildingASkullCaste.jpg" id="image1stat" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/BuildingEnthusiasmForSTEM.JPG" id="image2stat" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/CelebratingPresidentsDaywithSTEM.JPG" id="image3stat" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/EngagingSTEM.jpg" id="image4stat" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/EngineerSomeAfterSchoolSTEM.jpg" id="image5stat" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/ExtractingDNA.JPG" id="image6stat" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/FunSTEMshirts.JPG" id="image7stat" class="firstRowImage headerImage"/>
+		<img src="images/stemsized/PlantingTheSeedsForSTEM.JPG" id="image8stat" class="firstRowImage headerImage"/>
+	
+		<img src="images/stemsized/RacingSnowmanSleds.JPG" id="image9stat" class="secondRowImage headerImage" />
+		<img src="images/stemsized/Robotics_At_After_School_STEM.jpg" id="image10stat" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEM!Wow!.JPG" id="image11stat" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEM_ItsInTheCards.JPG" id="image12stat" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEMForAll.JPG" id="image13stat" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEMISAllAroundUs.JPG" id="image14stat" class="secondRowImage headerImage" />
+		<img src="images/stemsized/STEMNightAtCroneMiddleSchool.JPG" id="image15stat" class="secondRowImage headerImage" />
+		<img src="images/stemsized/TeachersLearningAboutSTEMResourcesInOurCounty.JPG" id="image16stat" class="secondRowImage headerImage" />
+
 	</div>
 </div>
 
