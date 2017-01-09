@@ -15,23 +15,23 @@ body {
 	margin-bottom: 0px;
 	background-color:#FFFCF9;
 }
-*.dropShad {   
+*.dropShad {
 -webkit-box-shadow: 3px 3px 5px 3px #999;
     -moz-box-shadow: 3px 3px 5px 3px #999;
-    box-shadow: 3px 3px 5px 3px #999;  
+    box-shadow: 3px 3px 5px 3px #999;
 }
 
-*.boxShad {   
+*.boxShad {
 -webkit-box-shadow: 0 0 5px 3px #999;
     -moz-box-shadow: 0 0 5px 3px #999;
-    box-shadow: 0 0 5px 3px #999;  
+    box-shadow: 0 0 5px 3px #999;
 }
 
 
 *.homeTopHeight { height:440px; }
 
 *.headContain { margin:0 auto 0 auto; padding:0; }
-*.header { height:86px; margin:18px auto 0 auto; vertical-align:middle } 
+*.header { height:86px; margin:18px auto 0 auto; vertical-align:middle }
 
 *.headerLogoDiv { float:left }
 *.headerLogoPic { width:210px; height:86px; }
@@ -58,8 +58,8 @@ body {
 
 *.middle { background-color:#FFF6E0; background-image: url(../images/bg-main2.gif); background-size:256px; margin:0 auto 0 auto; text-align:center; padding:12px 0 24px 0;  border-top:#FB5 1px solid; border-bottom:#FB5 1px solid; }
 
-*.mainNavDivInt { width:45%; margin:0 auto 0 auto; float:right; } 
-#mainNavInt { 		
+*.mainNavDivInt { width:45%; margin:0 auto 0 auto; float:right; }
+#mainNavInt {
 	margin: 1em 0 0 0;
 	padding: 0;
 	list-style: none;
@@ -67,13 +67,13 @@ body {
 #mainNavInt li a {
 	width:30%;
 		display: inline;
-		float:right; 
+		float:right;
 		padding: 3px 8px;
 		margin:0.5em 1em 0 0;
 		text-decoration: none;
 		font-weight: bold;
 		color: #069;
-		font-family:'Roboto Condensed', sans-serif; font-size:16px; text-decoration:none; font-weight:normal; 
+		font-family:'Roboto Condensed', sans-serif; font-size:16px; text-decoration:none; font-weight:normal;
 		border-radius:4px; background-color:#FFF; background-image:url(../images/home/red-arrow.png); background-repeat:no-repeat; background-position:right; background-size:12px; opacity:0.92; }
 #mainNavInt li a:hover { background-color:#FFF;  box-shadow: 0px 0px 10px #FFF; opacity:1.0; background-size:14px}
 
@@ -93,30 +93,30 @@ blockquote  { font-family:'Roboto Condensed', sans-serif; font-size:20px; text-d
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-	
+
 }
 *.BListItem {
     background-repeat: no-repeat;
-    background-position: 0px 8px; 
-    background-size: 1%; 
-    padding-left: 24px; 
+    background-position: 0px 8px;
+    background-size: 1%;
+    padding-left: 24px;
 	font-family:'Roboto Condensed', sans-serif; font-size:20px; text-decoration:none; font-weight:normal; color:#357; margin:2% 0 0 2%; line-height:140%
 }
 
 *.BulletBlue {
-    background-image: url(../images/internal/bullet-blue.gif); 
+    background-image: url(../images/internal/bullet-blue.gif);
     }
 *.BulletGreen {
-    background-image: url(../images/internal/bullet-green.gif); 
+    background-image: url(../images/internal/bullet-green.gif);
     }
 *.BulletOrange {
-    background-image: url(../images/internal/bullet-orange.gif); 
+    background-image: url(../images/internal/bullet-orange.gif);
     }
-	
+
 
 *.h1IntStem {  margin:0 0 0 0; font-family: 'Roboto Condensed', sans-serif; font-size:54px; text-decoration:none; font-weight:bold; text-align:left; }
 *.intStemBox { width:96%; background-color:#FFFCF9; border:#39C 2px solid; border-radius:10px; padding:2%; text-align:left;}
-	
+
 *.resourceLinkP { margin:4% 0 0 0; background-color:#fff; border:#357 1px solid; border-radius:6px; background-image:url(../images/home/red-arrow.png); background-repeat:no-repeat; background-position:right; background-size:16px; opacity:1; padding:1% 4% 1% 1%; line-height:140%;  }
 *.resourceLink { font-family:'Roboto Condensed', sans-serif; font-size:22px; text-decoration:none; font-weight:normal;  }
 
@@ -143,7 +143,7 @@ blockquote  { font-family:'Roboto Condensed', sans-serif; font-size:20px; text-d
 *.placeTxtMarg {margin-top:3%}
 *.resourceButton { background-color:#fff; border:#26cff9 1px solid; border-radius:4px; background-image:url(../images/home/red-arrow.png); background-repeat:no-repeat; background-position:right; background-size:14px; opacity:1.0; padding:0.5% 6% 0.5% 1%; line-height:140%; text-decoration:none; font-size:18px; font-family:'Roboto Condensed', sans-serif; font-weight:normal;  margin:2% 4% 2% 0%; line-height:140% }
 
-*.videoThumb { width:auto; float:right; margin:1% 0 1% 1%; border-radius:6px; border:none;}
+*.videoThumb { width:auto; float:right; margin-left:2%; margin-bottom:2%; margin-top:-1.5%; border-radius:6px; border:none;}
 
 *.orange {color:#ff9a00}
 *.green {color:#04d1c4}
@@ -164,7 +164,7 @@ blockquote  { font-family:'Roboto Condensed', sans-serif; font-size:20px; text-d
 
 
 @media only screen and (max-device-width: 720px)  {
-	
+
 *.siteContain { width:100%; margin:0 auto 0 auto; }
 
 *.colL {width:100%; float:none; display:inline-block }
@@ -178,8 +178,8 @@ blockquote  { font-family:'Roboto Condensed', sans-serif; font-size:20px; text-d
 *.headNavDiv {  border:2px #8AC solid; border-radius:20px; background-color:#F0F9FF; float:none; width:92%; margin:3% auto 0 auto; text-align:center; }
 #headNav  { margin:0 0 0 2%; padding:0; list-style:none; text-align:center; }
 #headNav li a {  padding:12px 24px 12px 24px; font-size:40px; float:left; }
-#headNav li a:hover { color:#07A; text-decoration:underline; }	
-	
+#headNav li a:hover { color:#07A; text-decoration:underline; }
+
 *.homeBoxes { width:100%; float:left; text-align:center; display:inline-block }
 *.boxOrange {border:#d98300 4px solid; border-radius:15px; padding-bottom:36px}
 *.boxGreen {border:#03b2a7 4px solid; border-radius:15px; padding-bottom:36px}
@@ -196,8 +196,8 @@ blockquote  { font-family:'Roboto Condensed', sans-serif; font-size:20px; text-d
 #midNav li a:active { opacity:0.92; }
 
 
-*.mainNavDivInt { width:60%; float:right; } 
-#mainNavInt { 		
+*.mainNavDivInt { width:60%; float:right; }
+#mainNavInt {
 	margin: 1em 0 0 0;
 	padding: 0;
 	list-style: none;
@@ -205,13 +205,13 @@ blockquote  { font-family:'Roboto Condensed', sans-serif; font-size:20px; text-d
 #mainNavInt li a {
 	width:60%;
 		display: inline;
-		float:right; 
+		float:right;
 		padding: 4px 12px;
 		margin:0.5em 0.5em 0 0.5em; margin:2% 2% 0 2%;
 		text-decoration: none;
 		font-weight: bold;
 		color: #069;
-		font-family:'Roboto Condensed', sans-serif; font-size:36px; font-size:260%; text-decoration:none; font-weight:normal; 
+		font-family:'Roboto Condensed', sans-serif; font-size:36px; font-size:260%; text-decoration:none; font-weight:normal;
 		border-radius:6px; background-color:#FFF; background-image:url(../images/home/red-arrow.png); background-repeat:no-repeat; background-position:right; background-size:32px; opacity:0.92; }
 #mainNavInt li a:hover { background-color:#FFF;  box-shadow: 0px 0px 10px #FFF; opacity:1.0; background-size:40px}
 
@@ -244,24 +244,24 @@ blockquote  { font-family:'Roboto Condensed', sans-serif; font-size:250%; text-d
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-	
+
 }
 *.BListItem {
     background-repeat: no-repeat;
-    background-position: 0px 8%; 
-    background-size: 2%; 
-    padding-left: 4%; 
+    background-position: 0px 8%;
+    background-size: 2%;
+    padding-left: 4%;
 	font-family:'Roboto Condensed', sans-serif; font-size:250%; text-decoration:none; font-weight:normal; color:#357; margin:3% 0 0 2%; line-height:1.4; }
 *.BulletBlue {
-    background-image: url(../images/internal/bullet-blue.gif); 
+    background-image: url(../images/internal/bullet-blue.gif);
     }
 *.BulletGreen {
-    background-image: url(../images/internal/bullet-green.gif); 
+    background-image: url(../images/internal/bullet-green.gif);
     }
 *.BulletOrange {
-    background-image: url(../images/internal/bullet-orange.gif); 
+    background-image: url(../images/internal/bullet-orange.gif);
     }
-	
+
 *.resourceLinkP { margin:6% 0 0 0; background-color:#fff; border:#357 1px solid; border-radius:6px; background-image:url(../images/home/red-arrow.png); background-repeat:no-repeat; background-position:right; background-size:40px; opacity:0.8; padding:2% 8% 2% 2%; line-height:140%;  }
 *.resourceLink { font-family:'Roboto Condensed', sans-serif; font-size:36px; text-decoration:none; font-weight:bold;  }
 
